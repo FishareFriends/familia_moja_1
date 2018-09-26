@@ -1,0 +1,8 @@
+<% Rails.logger.info "Nav Control" %>
+<% Rails.logger.debug cookies[:day_visit] %>
+
+<% if cookies[:anim_false] == true %>
+  <%= render "layouts/navigation_anim" %>
+<% else %>
+  <%= render "layouts/navigation" %>
+<% end %>

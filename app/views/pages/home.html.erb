@@ -1,3 +1,5 @@
-<h1>This is the home page </h1>
-
-<%= link_to 'About', about_path %>
+<% if cookies[:anim_false] == true %>
+  <%= render "home_anim" %>
+<% else %>
+  <%= render "home_main" %>
+<% end %>
